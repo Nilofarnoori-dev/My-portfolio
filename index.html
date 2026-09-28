@@ -19,15 +19,16 @@
           <li>Home</li>
           <li>About</li>
           <li>Skills</li>
-          <li><button class="btn">Contact Me</button></li>
+          <li>
+            <button class="btn"><a href="#contact">Contact Me</a></button>
+          </li>
         </ul>
-      
       </div>
       <div class="right">
         <figure class="text">
           <h1 class="name">
             <span>I am</span>
-            <br>
+            <br />
             <span> a Designer</span>
           </h1>
           <p>HTML, CSS, Bootstrap</p>
@@ -63,9 +64,46 @@
         </div>
       </div>
     </section>
-  <footer>
-    <p>© Copyright © 2026 All rights reserved</p>
-  </footer>
+
+    <section id="contact">
+      <h3>Contact Me</h3>
+      <p>Feel free to send me a message</p>
+
+      <form action="">
+        <label for="name">Full Name</label>
+        <input type="Full Name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" />
+
+        <label for="message">Message</label>
+        <textarea name="Message" id="message">
+          </textarea
+        >
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <footer>
+      <p>© Copyright © 2026 All rights reserved</p>
+    </footer>
   </body>
-  
+  <script>
+    const textarea = document.getElementById('message')
+
+    const Default = 'Type your message here....';
+    textarea.value = Default
+
+    textarea.addEventListener('click',()=>{
+      if(textarea.value === Default){
+        textarea.value = '';
+      }
+    })
+
+    textarea.addEventListener('blur',()=>{
+      if(textarea.value === ''){
+        textarea.value = Default
+      }
+    })
+
+  </script>
 </html>
