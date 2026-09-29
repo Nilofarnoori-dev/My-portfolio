@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
     <section class="main">
@@ -77,33 +81,46 @@
         <input type="email" />
 
         <label for="message">Message</label>
-        <textarea name="Message" id="message">
-          </textarea
-        >
+        <textarea name="Message" id="message"> </textarea>
         <button type="submit">Submit</button>
       </form>
     </section>
     <footer>
       <p>© Copyright © 2026 All rights reserved</p>
+
+      <div class="icons">
+   <a
+        href="https://www.instagram.com/effatnoorii?stkn=MWxsbWl1ZjMzMDF2Mg%3D%3D&utm_source=qr"
+        target="_blank"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a
+        href="https://www.facebook.com/share/19jrngksrj/?mibextid=wwXIfr"
+        target="_blank"
+      >
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      </div>
+   
     </footer>
   </body>
   <script>
-    const textarea = document.getElementById('message')
+    const textarea = document.getElementById("message");
 
-    const Default = 'Type your message here....';
-    textarea.value = Default
+    const Default = "Type your message here....";
+    textarea.value = Default;
 
-    textarea.addEventListener('click',()=>{
-      if(textarea.value === Default){
-        textarea.value = '';
+    textarea.addEventListener("click", () => {
+      if (textarea.value === Default) {
+        textarea.value = "";
       }
-    })
+    });
 
-    textarea.addEventListener('blur',()=>{
-      if(textarea.value === ''){
-        textarea.value = Default
+    textarea.addEventListener("blur", () => {
+      if (textarea.value === "") {
+        textarea.value = Default;
       }
-    })
-
+    });
   </script>
 </html>
